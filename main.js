@@ -30,7 +30,6 @@ async function sendRequest() {
     try {
         const endpoint = getEndpoint();
         let method = getUserMethod();
-        method = method.split(' ')[0];
 
         if (endpoint === '/procedures' && method === 'POST') {
             let newProcedure = createProcedure();
